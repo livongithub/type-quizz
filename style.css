@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'Akzidenz-Grotesk';
+    src: url(quizzOne/Akzidenz-grotesk-roman.ttf);
+}
+
+@font-face {
+    font-family: 'Bembo';
+    src: url(quizzOne/BemboStd.otf);
+}
+
+@font-face {
+    font-family: 'Caslon';
+    src: url(quizzOne/Caslon.otf);
+}
+
+h1{
+    font-weight: 400;
+}
+
+#answer{
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

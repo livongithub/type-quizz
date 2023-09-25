@@ -1,0 +1,20 @@
+let myText = document.getElementById('myText')
+let placeholderText = ['Nullam quis justo a nisl consectetur scelerisque. Integer in odio nec ante bibendum bibendum nec sit amet ipsum. Sed non justo vitae felis facilisis vulputate. Etiam eu ligula vel purus sodales malesuada. Vestibulum ullamcorper, libero sed posuere volutpat, nunc dui varius massa, in tincidunt lorem justo sit amet elit. Quisque nec mauris ut ex consectetur luctus. Sed eget augue vitae justo sollicitudin egestas. Vivamus et lectus id lectus fermentum vehicula nec in sapien. Vivamus ac tellus eu odio dictum convallis in eu purus. Sed gravida est nec velit suscipit, eu bibendum est aliquet. Vivamus bibendum justo id nulla facilisis, nec gravida justo aliquet. Nullam eu justo eu enim venenatis malesuada.', 
+'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed tincidunt neque in turpis posuere, id varius lorem tincidunt. Fusce auctor, elit eget gravida tempor, nisi orci hendrerit felis, a posuere felis turpis quis mi. Aliquam erat volutpat. Nullam at arcu a dui tincidunt auctor. Sed consequat feugiat arcu, in venenatis augue blandit non. Morbi fermentum, libero vel volutpat dignissim, risus quam tincidunt lorem, eget pharetra dolor justo quis sapien. Sed tincidunt tristique lectus, non varius lorem tincidunt id. Curabitur dignissim eget ante ac commodo. Vivamus efficitur ac nulla eget mattis.', 
+'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel velit a metus eleifend consectetur ac a arcu. Nunc euismod ante id justo pharetra, eget tincidunt purus efficitur. Fusce at lacinia libero. Vivamus ullamcorper vel odio vel luctus. Sed at urna non mi bibendum facilisis. Aenean gravida rhoncus mi, id finibus nisl tristique id. Nullam eu augue a libero bibendum pellentesque a eu libero. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed sit amet ipsum vel elit blandit egestas nec eget enim.', 
+'Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis nisi esse temporibus! Unde sit fugiat velit, minima libero incidunt dolore ipsum laborum quos qui hic, accusamus placeat cum repellat! Possimus!', 
+'Integer ac urna tincidunt, varius neque vel, dignissim justo. Fusce elementum tristique velit id viverra. Aliquam id quam at odio bibendum laoreet. Suspendisse id justo sit amet sapien congue blandit. Nulla facilisi. Proin vehicula dolor vel libero bibendum, at suscipit ligula tincidunt. Cras et augue non justo scelerisque tincidunt ut non justo. Vestibulum vel erat et ex aliquam pellentesque eget vel quam. Fusce eget tellus vel ipsum sodales bibendum sed in libero. Sed eget lacinia odio, a aliquet arcu. Vivamus et tortor eu elit sodales venenatis. In vel neque vel ante feugiat rhoncus in id nisl.', 
+'Praesent id justo vel purus bibendum lacinia. Integer a ante nec quam feugiat euismod. Suspendisse potenti. Nam euismod, urna ut ultricies vestibulum, turpis est pharetra odio, id fringilla libero ipsum ac elit. Vivamus quis justo at nulla tincidunt dictum. Sed at consequat odio, sit amet suscipit est. Sed vel orci euismod, ultrices velit eget, hendrerit metus. Pellentesque lacinia nulla sed leo venenatis, eget vehicula elit vulputate. Fusce id nunc elit. Integer fermentum velit non massa malesuada, vel facilisis ipsum congue. Integer malesuada justo nec dui pellentesque, sed vestibulum justo vestibulum. Curabitur auctor vehicula dapibus. Vivamus congue justo nec venenatis.']
+
+let fontArray = ['Bembo', 'Akzidenz-Grotesk', 'Baskerville', 'Caslon', 'Bodoni']
+
+myText.innerHTML = placeholderText[Math.floor(Math.random()*6)]
+myText.style.fontFamily = fontArray[Math.floor(Math.random()*5)]
+
+console.log(myText.style.fontFamily)
+
+let answer = document.getElementById('answer')
+
+answer.addEventListener(('click'), ()=>{
+    answer.innerHTML = myText.style.fontFamily
+})
