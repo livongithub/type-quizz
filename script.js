@@ -7,9 +7,10 @@ let placeholderText = ['Nullam quis justo a nisl consectetur scelerisque. Intege
 'Praesent id justo vel purus bibendum lacinia. Integer a ante nec quam feugiat euismod. Suspendisse potenti. Nam euismod, urna ut ultricies vestibulum, turpis est pharetra odio, id fringilla libero ipsum ac elit. Vivamus quis justo at nulla tincidunt dictum. Sed at consequat odio, sit amet suscipit est. Sed vel orci euismod, ultrices velit eget, hendrerit metus. Pellentesque lacinia nulla sed leo venenatis, eget vehicula elit vulputate. Fusce id nunc elit. Integer fermentum velit non massa malesuada, vel facilisis ipsum congue. Integer malesuada justo nec dui pellentesque, sed vestibulum justo vestibulum. Curabitur auctor vehicula dapibus. Vivamus congue justo nec venenatis.']
 
 let fontArray = ['Bembo', 'Akzidenz-Grotesk', 'Baskerville', 'Caslon', 'Bodoni']
+let fontquizTwo = ['Courier', 'Druk', 'Clarendon', 'Century Schoolbook', 'Didot']
 
 myText.innerHTML = placeholderText[Math.floor(Math.random()*6)]
-myText.style.fontFamily = fontArray[Math.floor(Math.random()*5)]
+myText.style.fontFamily = fontquizTwo[Math.floor(Math.random()*5)]
 
 console.log(myText.style.fontFamily)
 

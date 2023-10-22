@@ -13,6 +13,16 @@
     src: url(quizzOne/Caslon.otf);
 }
 
+@font-face {
+    font-family: 'Druk';
+    src: url(quizzTwo/Druk.otf);
+}
+
+@font-face {
+    font-family: 'Century Schoolbook';
+    src: url(quizzTwo/Century-Schoolbook.otf);
+}
+
 h1{
     font-weight: 400;
 }
